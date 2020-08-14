@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.contenedor {
+  width: auto;
+  margin: 0 auto;
+  border: 2%;
+}
+
+.menu {
+  width: auto;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  font-size: 24px;
+  width: 10%;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.nav {
+  display: inline-block;
+  width: 88%;
+  text-align: right;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.input-menu {
+  border-radius: 30px;
+}
+
+.contenido {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.listad-noticias {
+  width: 75%;
+  float: left;
+}
+
+.noticia {
+  width: 210px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cuerpo img {
+  width: 33.3%;
+  height: 300px;
+}
+
+.cuerpo p {
+  padding: 5px 10px;
+}
+
+.listado-izquierdo {
+  width: 25%;
+  margin-left: 2%;
+}
+
+.cabecera-listado {
+  width: 220px;
+  border-bottom: 1px solid gray;
+}
+
+.objeto-lista-padre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tags {
+  border-bottom: 1px solid gray;
+}
+
+.tags ul {
+  padding: 0;
+  list-style: none;
+}
+
+.tags ul li {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+}
+
+.noticias-destacadas {
+  margin-bottom: 50px;
+}
+
+.noticias-destacadas img {
+  width: 220px;
+  height: 200px;
+}
+
+.newsletter {
+  width: 98%;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.group input,
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+.footer {
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main {
+  height: auto;
+}
+@media (min-width: 800px) {
+  .main {
+    width: 80vw;
+    margin: 0 10vw 0 10vw;
+  }
+}
+@media (max-width: 799px) {
+  .main {
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+  }
+}
+
+.listado-noticias {
+  display: grid;
+  grid-auto-rows: auto;
+}
+@media (min-width: 800px) {
+  .listado-noticias {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+  }
+}
+@media (max-width: 799px) {
+  .listado-noticias {
+    grid-template-columns: 1fr;
+  }
+}
+
+.listado-noticias_cuerpo img {
+  padding: 0;
+}
+@media (min-width: 800px) {
+  .listado-noticias_cuerpo img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 799px) {
+  .listado-noticias_cuerpo img {
+    height: 50vw;
+    width: 130%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ocultar-mobil {
+    display: inherit;
+  }
+}
+@media (max-width: 768px) {
+  .ocultar-mobil {
+    display: none;
+  }
+}
+.listado-noticias div {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.listado-noticias img:hover {
+  border: 1px solid black;
+}
+
+/* imagenes destacadas */
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+.listado-noticias div {
+  width: 98%;
+  height: auto;
+  cursor: pointer;
+}
+
+.listado-noticias img:hover {
+  border: 1px solid black;
+}
+
+/* imagenes destacadas */
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 25px;
+}
+@media all and (min-width: 768px) {
+  .wrapper {
+    margin: 0 40px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+/* Mostly Fluid */
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.columna1,
+.columna2,
+.columna3,
+.columna4,
+.columna5 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .columna2,
+.columna3,
+.columna4,
+.columna5 {
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .columna1 {
+    width: 60%;
+  }
+
+  .columna2 {
+    width: 40%;
+  }
+
+  .columna3,
+.columna4,
+.columna5 {
+    width: 33.3%;
+  }
+
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Estilos */
+
+/*# sourceMappingURL=main.css.map */
